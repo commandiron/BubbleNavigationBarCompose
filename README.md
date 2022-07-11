@@ -4,6 +4,8 @@
 
 <img src="https://user-images.githubusercontent.com/50905347/178169542-c3b8a85f-d068-4b51-b595-30365f932dd5.png" width="596" height="300">
 
+<img src="https://user-images.githubusercontent.com/50905347/178169979-f8958c33-680d-4a36-bc2e-4123e63f031b.gif" width="412" height="200">
+
 ## Setup
 1. Open the file `settings.gradle` (it looks like that)
 ```groovy
