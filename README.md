@@ -2,7 +2,7 @@
 
 ## How it looks
 
-<img src="https://user-images.githubusercontent.com/50905347/178169377-414924f4-e5bf-4aa9-b248-14b2802384db.png" width="250" height="530">
+<img src="https://user-images.githubusercontent.com/50905347/178169542-c3b8a85f-d068-4b51-b595-30365f932dd5.png" width="596" height="300">
 
 ## Setup
 1. Open the file `settings.gradle` (it looks like that)
