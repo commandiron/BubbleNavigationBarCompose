@@ -30,12 +30,12 @@ dependencies {
 ## Usage
 ```kotlin  
 BubbleNavigationBar() {
-                                BubbleNavigationBarItem(
-                                    selected = true,
-                                    onClick = { /*TODO*/ },
-                                    icon = Icons.Default.Home,
-                                    selectedColor = LocalContentColor.current,
-                                    title = "Test"
-                                )
-                            }
+    BubbleNavigationBarItem(
+        selected = true,
+        onClick = { /*TODO*/ },
+        icon = Icons.Default.Home,
+        selectedColor = LocalContentColor.current,
+        title = "Test"
+    )
+}
 ```
