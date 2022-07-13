@@ -33,7 +33,9 @@ BubbleNavigationBar{
     navigationItems.forEach { navigationItem ->
         BubbleNavigationBarItem(
             selected = currentRoute == navigationItem.route,
-            onClick = {},
+            onClick = {
+                //Navigate
+            },
             icon = navigationItem.icon,
             title = navigationItem.title,
             selectedColor = navigationItem.selectedColor
