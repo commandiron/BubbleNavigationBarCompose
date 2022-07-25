@@ -1,4 +1,4 @@
-# BubbleNavigationBarCompose
+# BubbleNavigationBarCompose [![](https://jitpack.io/v/commandiron/BubbleNavigationBarCompose.svg)](https://jitpack.io/#commandiron/BubbleNavigationBarCompose)
 
 ## How it looks
 
@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 3. Add dependency
 ```groovy
 dependencies {
-        implementation 'com.github.commandiron:BubbleNavigationBarCompose:1.0'
+        implementation 'com.github.commandiron:BubbleNavigationBarCompose:1.0.1'
 }
 ```
 
