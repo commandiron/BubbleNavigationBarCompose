@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 3. Add dependency
 ```groovy
 dependencies {
-        implementation 'com.github.commandiron:BubbleNavigationBarCompose:1.0.1'
+        implementation 'com.github.commandiron:BubbleNavigationBarCompose:1.0.2'
 }
 ```
 
