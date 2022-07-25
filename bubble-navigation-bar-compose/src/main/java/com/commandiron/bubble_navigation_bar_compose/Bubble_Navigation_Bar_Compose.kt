@@ -1,5 +1,6 @@
 package com.commandiron.bubble_navigation_bar_compose
 
+import androidx.annotation.DrawableRes
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -11,7 +12,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.rememberVectorPainter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
@@ -47,7 +51,49 @@ fun RowScope.BubbleNavigationBarItem(
     modifier: Modifier = Modifier,
     selected: Boolean,
     onClick: () -> Unit,
+    @DrawableRes icon: Int,
+    selectedColor: Color,
+    unSelectedBackgroundColor: Color = MaterialTheme.colorScheme.primaryContainer,
+    unSelectedIconColor: Color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.1f),
+    title: String
+) = BubbleNavigationBarItem(
+    modifier,
+    selected,
+    onClick,
+    painterResource(icon),
+    selectedColor,
+    unSelectedBackgroundColor,
+    unSelectedIconColor,
+    title,
+)
+
+@Composable
+fun RowScope.BubbleNavigationBarItem(
+    modifier: Modifier = Modifier,
+    selected: Boolean,
+    onClick: () -> Unit,
     icon: ImageVector,
+    selectedColor: Color,
+    unSelectedBackgroundColor: Color = MaterialTheme.colorScheme.primaryContainer,
+    unSelectedIconColor: Color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.1f),
+    title: String
+) = BubbleNavigationBarItem(
+    modifier,
+    selected,
+    onClick,
+    rememberVectorPainter(icon),
+    selectedColor,
+    unSelectedBackgroundColor,
+    unSelectedIconColor,
+    title,
+)
+
+@Composable
+fun RowScope.BubbleNavigationBarItem(
+    modifier: Modifier = Modifier,
+    selected: Boolean,
+    onClick: () -> Unit,
+    iconPainter: Painter,
     selectedColor: Color,
     unSelectedBackgroundColor: Color = MaterialTheme.colorScheme.primaryContainer,
     unSelectedIconColor: Color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.1f),
@@ -79,7 +125,7 @@ fun RowScope.BubbleNavigationBarItem(
             ) {
                 Icon(
                     modifier = Modifier.height(navigationHeight / 2),
-                    imageVector = icon,
+                    painter = iconPainter,
                     contentDescription = null,
                     tint = if(selected) selectedColor else unSelectedIconColor
                 )
