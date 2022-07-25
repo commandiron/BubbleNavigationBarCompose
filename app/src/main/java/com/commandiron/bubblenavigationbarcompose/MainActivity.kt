@@ -74,7 +74,7 @@ class MainActivity : ComponentActivity() {
                 }
                 Scaffold(
                     bottomBar = {
-                        BubbleNavigationBar{
+                        BubbleNavigationBar {
                             navigationItems.forEach { navigationItem ->
                                 BubbleNavigationBarItem(
                                     selected = currentRoute == navigationItem.route,
