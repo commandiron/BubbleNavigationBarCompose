@@ -1,6 +1,4 @@
-# BubbleNavigationBarCompose 
-
-[![](https://jitpack.io/v/commandiron/BubbleNavigationBarCompose.svg)](https://jitpack.io/#commandiron/BubbleNavigationBarCompose)
+# BubbleNavigationBarCompose [![](https://jitpack.io/v/commandiron/BubbleNavigationBarCompose.svg)](https://jitpack.io/#commandiron/BubbleNavigationBarCompose)
 
 ## How it looks
 
