@@ -78,6 +78,7 @@ fun RowScope.BubbleNavigationBarItem(
     BoxWithConstraints(
         modifier = modifier
             .fillMaxHeight()
+            .weight(1f)
             .clickable(
                 interactionSource = interactionSource,
                 indication = null
